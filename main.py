@@ -61,7 +61,7 @@ def covid_info(title):
         link = info['link']
         keywords = info['keywords']
         publishDate = info['publishDate']
-        uploadDate=  in['uploadDate']     
+        uploadDate=  info['uploadDate']     
         covid_info = f"""
 --**Covid 19 Information**--
 
