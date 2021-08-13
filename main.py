@@ -7,7 +7,7 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 FayasNoushad = Client(
-    "Corona-Info-Bot",
+    "YouTube-info-bot",
     bot_token = os.environ["BOT_TOKEN"],
     api_id = int(os.environ["API_ID"]),
     api_hash = os.environ["API_HASH"]
@@ -48,31 +48,33 @@ async def reply_info(bot, update):
         reply_markup=reply_markup
     )
 
-def covid_info(country_name):
+def covid_info(title):
     try:
-        r = requests.get(API + requote_uri(country_name.lower()))
+        r = requests.get(API + requote_uri(title.lower()))
         info = r.json()
-        country = info['country'].capitalize()
-        active = info['active']
-        confirmed = info['confirmed']
-        deaths = info['deaths']
+        title = info['title']
+        viewCount= info['text']
+        thumbnails= info['url,]
+        description= info['description']
         info_id = info['id']
-        last_update = info['last_update']
-        latitude = info['latitude']
-        longitude = info['longitude']
-        recovered = info['recovered']
+        channel = info['name']
+        link = info['link']
+        keywords = info['keywords']
+        publishDate = info['publishDate']
+        uploadDate=  in['uploadDate']     
         covid_info = f"""
 --**Covid 19 Information**--
 
-Country : `{country}`
-Actived : `{active}`
-Confirmed : `{confirmed}`
-Deaths : `{deaths}`
-ID : `{info_id}`
-Last Update : `{last_update}`
-Latitude : `{latitude}`
-Longitude : `{longitude}`
-Recovered : `{recovered}`
+title : `{title}`
+viewCount : `{acive}`
+thumbnails : `{url}`
+description : `{description}`
+ID : `{id}`
+channel : `{name}`
+link : `{link}`
+keywords : `{keywords}`
+publishDate: `{publishDate}`
+uploadDate:'{uploadDate}'
 
 Made by @FayasNoushad
 """
