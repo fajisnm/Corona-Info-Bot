@@ -13,7 +13,7 @@ FayasNoushad = Client(
     api_hash = os.environ["API_HASH"]
 )
 
-API = "https://api.sumanjay.cf/covid/?country="
+API = "https://youtube.api.fayas.me/video/getinfo/?query="
 
 START_TEXT = """
 Hello {}, I am a simple corona information of a country telegram bot.
