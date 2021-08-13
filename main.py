@@ -54,7 +54,7 @@ def covid_info(title):
         info = r.json()
         title = info['title']
         viewCount= info['text']
-        thumbnails= info['url,]
+        thumbnails= info['url']
         description= info['description']
         info_id = info['id']
         channel = info['name']
