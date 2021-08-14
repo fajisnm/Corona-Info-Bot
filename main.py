@@ -78,8 +78,3 @@ uploadDate:'{uploadDate}'
 
 Made by @FayasNoushad
 """
-        return covid_info
-    except Exception as error:
-        return error
-
-FayasNoushad.run()
