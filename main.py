@@ -76,5 +76,4 @@ keywords : `{keywords}`
 publishDate: `{publishDate}`
 uploadDate:'{uploadDate}'
 
-Made by @FayasNoushad
-"""
+Made by @mhdfajis
