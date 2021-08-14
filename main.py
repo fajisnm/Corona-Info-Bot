@@ -62,9 +62,8 @@ def youtube(title):
         keywords = info['keywords']
         publishDate = info['publishDate']
         uploadDate=  info['uploadDate']     
-        covid_info = f"""
---**Covid 19 Information**--
 
+--**YouTube video Information**--
 title : `{title}`
 viewCount : `{acive}`
 thumbnails : `{url}`
