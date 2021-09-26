@@ -71,8 +71,10 @@ subscriber : `{subscriber}`
 category : `{category}`
 publishdate: `{publishdate}`
 
-Made by @fajis
+Made by @mhdfajis
 """
-        except Exception as error:
-        print(error)
+        return youtube_info
+    except Exception as error:
+        return error
+
 FayasNoushad.run()
