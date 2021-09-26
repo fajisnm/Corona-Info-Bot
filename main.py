@@ -73,8 +73,6 @@ publishdate: `{publishdate}`
 
 Made by @fajis
 """
-        return youtube
-    except Exception as error:
-        return error
-
+        except Exception as error:
+        print(error)
 FayasNoushad.run()
