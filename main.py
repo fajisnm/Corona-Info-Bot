@@ -59,8 +59,7 @@ def youtube_info(title):
         subscriber = info['subscriber']
         category= info['category']
         dislikes = info['dislikes']
-        publishdate = info['publishdate']
-        uploadDate =  info['uploadDate'] 
+        publishdate = info['publishdate'] 
         youtube_info = f"""
 --**YouTube Video Details**--
 
@@ -71,7 +70,6 @@ channel_name : `{channel_name}`
 subscriber : `{subscriber}`
 category : `{category}`
 publishdate: `{publishdate}`
-uploadDate:'{uploadDate}'
 
 Made by @fajis
 """
