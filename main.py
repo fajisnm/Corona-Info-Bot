@@ -48,9 +48,9 @@ async def reply_info(bot, update):
         reply_markup=reply_markup
     )
 
-def youtube_info(title):
+def youtube_info<code>{query}</code>:
     try:
-        r = requests.get(API + requote_uri(title.lower()))
+        r = requests.get(API + requote_uri(<code>{query}</code>()))
         info = r.json()
         title = info['title']
         views = info['views']
