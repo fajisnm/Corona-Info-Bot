@@ -62,7 +62,9 @@ def youtube(title):
         publishdate = info['publishdate']
         uploadDate =  info['uploadDate'] 
     
-    
+ 
+--** YouTube Video Details**--   
+
 title : `{title}`
 views : `{views}`
 likes : `{likes}`
@@ -72,4 +74,10 @@ category : `{category}`
 publishdate: `{publishdate}`
 uploadDate:'{uploadDate}'
 
-Made by @mhdfajis
+Made by @fajis
+"""
+        return youtube
+    except Exception as error:
+        return error
+
+FayasNoushad.run()
