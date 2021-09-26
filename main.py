@@ -53,21 +53,23 @@ def youtube(title):
         r = requests.get(API + requote_uri(title.lower()))
         info = r.json()
         title = info['title']
-        views= info['views']
-        channel = info['name']
-        link = info['link']
-        keywords = info['keywords']
-        publishDate = info['publishDate']
-        uploadDate=  info['uploadDate'] 
+        views = info['views']
+        likes = info['likes']
+        channel_name = info['channel_name']
+        subscriber = info['subscriber']
+        category= info['category']
+        dislikes = info['dislikes']
+        publishdate = info['publishdate']
+        uploadDate =  info['uploadDate'] 
     
     
 title : `{title}`
 views : `{views}`
-ID : `{id}`
-channel : `{name}`
-link : `{link}`
-keywords : `{keywords}`
-publishDate: `{publishDate}`
+likes : `{likes}`
+channel_name : `{channel_name}`
+subscriber : `{subscriber}`
+category : `{category}`
+publishdate: `{publishdate}`
 uploadDate:'{uploadDate}'
 
 Made by @mhdfajis
