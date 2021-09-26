@@ -61,9 +61,8 @@ def youtube(title):
         dislikes = info['dislikes']
         publishdate = info['publishdate']
         uploadDate =  info['uploadDate'] 
-    youtube_info = f"""
- 
---** YouTube Video Details**--   
+        youtube_info = f"""
+--**YouTube Video Details**--
 
 title : `{title}`
 views : `{views}`
