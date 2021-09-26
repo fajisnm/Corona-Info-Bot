@@ -13,7 +13,7 @@ FayasNoushad = Client(
     api_hash = os.environ["API_HASH"]
 )
 
-API = "https://youtube.api.fayas.me/video/getinfo/?query="
+API = "https://fajisytdetilsv1.herokuapp.com/api?link="
 
 START_TEXT = """
 Hello {}, I am a simple corona information of a country telegram bot.
@@ -53,10 +53,7 @@ def youtube(title):
         r = requests.get(API + requote_uri(title.lower()))
         info = r.json()
         title = info['title']
-        viewCount= info['text']
-        thumbnails= info['url']
-        description= info['description']
-        info_id = info['id']
+        views= info['views']
         channel = info['name']
         link = info['link']
         keywords = info['keywords']
@@ -65,9 +62,7 @@ def youtube(title):
     
     
 title : `{title}`
-viewCount : `{acive}`
-thumbnails : `{url}`
-description : `{description}`
+views : `{views}`
 ID : `{id}`
 channel : `{name}`
 link : `{link}`
