@@ -42,7 +42,7 @@ async def start(bot, update):
 async def reply_info(bot, update):
     reply_markup = BUTTONS
     await update.reply_text(
-        text=covid_info(update.text),
+        text=youtube_info(update.text),
         disable_web_page_preview=True,
         quote=True,
         reply_markup=reply_markup
@@ -61,7 +61,7 @@ def youtube(title):
         dislikes = info['dislikes']
         publishdate = info['publishdate']
         uploadDate =  info['uploadDate'] 
-    
+    youtube_info = f"""
  
 --** YouTube Video Details**--   
 
