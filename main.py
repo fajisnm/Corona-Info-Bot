@@ -13,7 +13,7 @@ FayasNoushad = Client(
     api_hash = os.environ["API_HASH"]
 )
 
-API = "https://fajisytdetilsv1.herokuapp.com/api?link="
+API = "https://fajisytdetilsv1.herokuapp.com/api?link=message"
 
 START_TEXT = """
 Hello {}, I am a simple corona information of a country telegram bot.
@@ -48,7 +48,7 @@ async def reply_info(bot, update):
         reply_markup=reply_markup
     )
 
-def youtube_info(https://youtu.be/579UEbtjSOo):
+def youtube_info(message):
     try:
         r = requests.get(API + requote_uri((message.lower)()))
         info = r.json()
