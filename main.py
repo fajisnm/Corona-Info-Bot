@@ -48,7 +48,7 @@ async def reply_info(bot, update):
         reply_markup=reply_markup
     )
 
-def youtube_info(message):
+def youtube_info(bot,message):
     try:
         r = requests.get(API + requote_uri(update.text.lower()))
         info = r.json()
