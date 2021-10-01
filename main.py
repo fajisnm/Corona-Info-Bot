@@ -39,7 +39,7 @@ async def start(bot, update):
     )
 
 @FayasNoushad.on_message(filters.private & filters.text)
-async def reply_info(bot, message):
+async def reply_info(bot, update):
     reply_markup = BUTTONS
     await update.reply_text(
         text=youtube_info(update.text),
