@@ -50,7 +50,7 @@ async def reply_info(bot, update):
 
 def youtube_info(bot,message):
     try:
-        r = requests.get(API + requote_uri(update.text.lower()))
+        r = requests.get(API + requote_uri(youtube_info.lower()))
         info = r.json()
         title = info['title']
         views = info['views']
