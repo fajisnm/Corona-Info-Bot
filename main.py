@@ -39,7 +39,7 @@ async def start(bot, update):
     )
 
 @FayasNoushad.on_message(filters.private & filters.text)
-async def reply_info(bot, update):
+async def reply_info(bot, message):
     reply_markup = BUTTONS
     await update.reply_text(
         text=youtube_info(update.text),
@@ -48,7 +48,7 @@ async def reply_info(bot, update):
         reply_markup=reply_markup
     )
 
-def youtube_info(bot,message):
+def youtube_info(message):
     try:
         r = requests.get(API + requote_uri(youtube_info.lower()))
         info = r.json()
